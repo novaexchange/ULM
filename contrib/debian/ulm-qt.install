@@ -1,0 +1,6 @@
+usr/local/bin/ulm-qt usr/bin
+share/pixmaps/ulm32.xpm usr/share/pixmaps
+share/pixmaps/ulm16.xpm usr/share/pixmaps
+share/pixmaps/ulm128.png usr/share/pixmaps
+debian/ulm-qt.desktop usr/share/applications
+debian/ulm-qt.protocol usr/share/kde4/services/

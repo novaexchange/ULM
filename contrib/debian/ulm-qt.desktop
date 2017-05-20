@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Ulm
+Comment=Ulm P2P Cryptocurrency
+Comment[fr]=Ulm, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Ulm, eşten eşe kriptografik sanal para birimi
+Exec=ulm-qt %u
+Terminal=false
+Type=Application
+Icon=ulm128
+MimeType=x-scheme-handler/ulm;
+Categories=Office;Finance;

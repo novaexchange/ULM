@@ -1,0 +1,22 @@
+[Unit]
+Description=Ulm's distributed currency daemon
+After=network.target
+
+[Service]
+User=ulmcore
+Group=ulmcore
+
+Type=forking
+PIDFile=/var/lib/ulmd/ulmd.pid
+ExecStart=/usr/bin/ulmd -daemon -pid=/var/lib/ulmd/ulmd.pid \
+-conf=/etc/ulmcore/ulm.conf -datadir=/var/lib/ulmd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
